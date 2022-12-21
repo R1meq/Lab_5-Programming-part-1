@@ -107,15 +107,15 @@ void Country::displayinfo() const
 
 double сalculatePopulationDensity(list<Country>& Countries)
 {
-	double sumPopulation = 0.0;
-	double sumArea = 0.0;
+	double sum_population = 0.0;
+	double sum_area = 0.0;
 
 	for (const auto& country : Countries)
 	{
-		sumPopulation += country.population;
-        sumArea += country.area;
+		sum_population += country.population;
+        sum_area += country.area;
     }
-	return sumPopulation / sumArea;
+	return sum_population / sum_area;
 }
 
 Country& Country::operator=(const Country& otherCountry)
