@@ -46,7 +46,7 @@ void Land::sortByGPD()
 
 void Land::printLandTopByGPD(const int &count)
 {
-	int topCount = count;
+	int top_сount = count;
 
 	cout << name << endl << endl;
 	sortByGPD();
@@ -54,12 +54,12 @@ void Land::printLandTopByGPD(const int &count)
 	{
 		country.displayinfo();
 		cout << endl;
-		if (--topCount == 0)
+		if (--top_сount == 0)
 			break;
 	}
 }
 
-Country Land::TopByPopulation(governmentType type) const
+Country Land::topByPopulation(governmentType type) const
 {
 	Country maxCountryByPopulation;
 
