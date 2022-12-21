@@ -48,7 +48,7 @@ public:
 	double getArea() const;
 	void setGPD(double GPD);
 	double getGPD() const;
-	void setCode(int	 code);
+	void setCode(int code);
 	int getCode() const;
 	void setGovernmentType(governmentType type);
 	governmentType getGovernmentType() const;
