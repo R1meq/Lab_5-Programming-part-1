@@ -7,13 +7,6 @@
 
 using namespace std;
 
-//Додати клас Country(name, capital, code, population, area, GDP)-->Done!
-//Додати enum governmentType : DEMOCRACY, REPUBLIC, AUTOCRACY, -->Done!
-//Додати клас Land(name, ...), до якого можуть належати певні країни-->Done!
-//Додати функцію підрахунку  густини населення серед певних країн сalculatePopulationDensity(Countries*)-->Done!
-//Реалізувати метод сортування  за GDP та виводу топу країн з найкращою економікою-->Done!
-//Реалізувати метод для вибору країни, котрий залежить від певних параметрів(на свій смак)-->Done!
-
 enum governmentType {
 	DEMOCRACY,
 	REPUBLIC,
@@ -55,7 +48,7 @@ public:
 	double getArea() const;
 	void setGPD(double GPD);
 	double getGPD() const;
-	void setCode(int code);
+	void setCode(int	 code);
 	int getCode() const;
 	void setGovernmentType(governmentType type);
 	governmentType getGovernmentType() const;
