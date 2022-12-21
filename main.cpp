@@ -19,9 +19,9 @@ int main(void)
 	land.printLand();
 	cout << endl;
 	cout << "--------------------- Output Top 3 Country by GPD-----------------------" << endl;
-	const int topCount = 3;
-	land.printLandTopByGPD(topCount);
+	const int kTopCount = 3;
+	land.printLandTopByGPD(kTopCount);
 	cout << "--------------------- Output TOP 1 Country by population-----------------------" << endl;
-	land.TopByPopulation(REPUBLIC).displayinfo();
+	land.topByPopulation(REPUBLIC).displayinfo();
 	return 0;
 }
