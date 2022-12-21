@@ -18,7 +18,6 @@ public:
 	void printLand();
 	void printLandTopByGPD(const int &count);
 	Country topByPopulation(governmentType type) const;
-
 };
 
 #endif // _LAND_
