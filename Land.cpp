@@ -1,4 +1,4 @@
-﻿#include "Land.h"
+#include "Land.h"
 #include <list>
 
 Land::Land()
@@ -33,10 +33,10 @@ void Land::printLand()
 	}
 }
 
-static bool compCountryByGPDByDecrease(const Country& countryLeft, 
-	const Country& countryRight)
+static bool compCountryByGPDByDecrease(const Country& kCountryLeft, 
+	const Country& kCountryRight)
 { 
-	return countryLeft.getGPD() > countryRight.getGPD();
+	return kCountryLeft.getGPD() > kCountryRight.getGPD();
 }
 
 void Land::sortByGPD()
@@ -44,9 +44,9 @@ void Land::sortByGPD()
 	listCountries.sort(compCountryByGPDByDecrease);
 }
 
-void Land::printLandTopByGPD(const int &count)
+void Land::printLandTopByGPD(const int &kCount)
 {
-	int top_сount = count;
+	int top_сount = kCount;
 
 	cout << name << endl << endl;
 	sortByGPD();
